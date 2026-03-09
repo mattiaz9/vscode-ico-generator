@@ -71,7 +71,6 @@
       ]
     }
   },
-  "packageManager": "pnpm@9.0.0",
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
@@ -85,12 +84,13 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.7.0",
     "@eslint/js": "^9.17.0",
     "@types/node": "^20.10.0",
     "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.7.0",
     "eslint": "^9.17.0",
     "typescript": "^5.3.0",
     "typescript-eslint": "^8.18.0"
-  }
+  },
+  "packageManager": "pnpm@10.31.0"
 }
