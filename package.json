@@ -3,6 +3,26 @@
   "displayName": "ICO Generator",
   "description": "Generate ICO files from images",
   "version": "1.0.0",
+  "publisher": "mattiaz9",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattiaz9/ico-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/mattiaz9/ico-generator/issues"
+  },
+  "homepage": "https://github.com/mattiaz9/ico-generator#readme",
+  "keywords": [
+    "ico",
+    "icon",
+    "image",
+    "converter",
+    "favicon",
+    "png",
+    "svg"
+  ],
+  "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -51,18 +71,21 @@
       ]
     }
   },
-  "dependencies": {
-    "png-to-ico": "^3.0.1",
-    "sharp": "^0.33.5"
-  },
   "packageManager": "pnpm@9.0.0",
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "build:icon": "node scripts/build-icon.mjs",
+    "package": "pnpm run compile && pnpm exec vsce package"
+  },
+  "dependencies": {
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "@vscode/vsce": "^3.7.0",
     "@eslint/js": "^9.17.0",
     "@types/node": "^20.10.0",
     "@types/vscode": "^1.85.0",
