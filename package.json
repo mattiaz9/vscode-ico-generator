@@ -2,7 +2,7 @@
   "name": "ico-generator",
   "displayName": "ICO Generator",
   "description": "Generate ICO files from images",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "mattiaz9",
   "license": "MIT",
   "repository": {
